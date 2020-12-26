@@ -4,7 +4,7 @@
  *
  * Copyright (C) 2020 - gerie reveur
  *
- * <rock_paper_scissors.cpp> is free software; you can./ redistribute it and/or modify
+ * <rock_paper_scissors.cpp> is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
@@ -63,26 +63,25 @@ void GameEngine::menu()
     cout << "1. Rock" << endl;
     cout << "2. Paper" << endl;
     cout << "3. Scissors" << endl;
-    cout << "0. quit" << endl;
 }
 
 void GameEngine::gamePlay()
 {
-      //GameEngine continues until:
+    /   //GameEngine continues until:
         //the user is out of money
         //or the user chooses to quit the EngineWorks by entering 0
         //or either the user or the computer wins 4 EngineWorkss first.
         do
         {
-            this->start();    
+            this.start();    
         }while(LOSS == true || quit != 0 || winCount == 4);   
 }
 
 void GameEngine::start()
 {
         cout <<  "enter your choice" << endl;
-        cin >> user_choice >> quit;
-        computer_choice = this->get_computer_choice();
+        cin >> user_choice;
+        computer_choice = this.get_computer_choice();
         
         if(user_choice == ROCK && computer_choice == PAPER){
         cout << "The computer has won, paper beats rock" << endl;

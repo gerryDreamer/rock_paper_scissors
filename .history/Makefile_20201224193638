@@ -1,0 +1,2 @@
+rock: rockMain.cpp rock.cpp rock.h
+$(CC) rockMain.cpp rock.cpp rock.h -o rock

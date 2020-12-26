@@ -1,0 +1,11 @@
+rock: rock.o rockMain.o
+	g++ -o rock rock.o rockMain.o
+	
+rock.o : rock.cpp rock.h
+	g++ -c rock.cpp
+	
+rockMain.o : rockMain.cpp rock.cpp rock.h
+	g++ -c rockMain.cpp
+
+clean:
+	rm rock.o rockMain.o rock

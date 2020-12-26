@@ -1,0 +1,2 @@
+rock: rockMain.cpp rock.cpp rock.h
+$(gcc) $(CFLAGS) $@.cpp $()

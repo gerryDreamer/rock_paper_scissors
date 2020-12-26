@@ -18,22 +18,10 @@
  * along with <rock_paper_scissors.cpp>. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <iostream>
-#include <cstdlib>
+#include "rock.h"ll
 
-using namespace std;
-
-class GameEngine{
-    public:
-    GameEngine();
-    void start();
-    int get_computer_choice();
-    void menu();
-    void gamePlay();
-
-    private:
-        int wager, user, computer,quit,winCount,user_choice,computer_choice;
-        bool WIN;
-        bool LOSS;
-        const int ROCK = 1,PAPER = 2,SCISSORS = 3;
-};
+int main(int argc, char const *argv[])
+{
+    GameEngine g;
+    return 0;
+}
